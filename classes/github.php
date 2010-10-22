@@ -2,11 +2,23 @@
 
 class Github extends phpGitHubApi
 {
+    /**
+     * Constructs and returns a new Github object
+     *
+     * @param   boolean  $debug
+     * @return  object
+     */
     public static function factory($debug = FALSE)
     {
         return new Github($debug);
     }
     
+    /**
+     * Singleton instance of Github
+     *
+     * @param   boolean  $debug
+     * @return  object
+     */
     public static function instance($debug = FALSE)
     {
         static $instance;
