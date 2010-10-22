@@ -1,0 +1,3 @@
+[submodule "vendor/github"]
+	path = vendor/github
+	url = git://github.com/ornicar/php-github-api.git
